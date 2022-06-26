@@ -11,7 +11,13 @@
     <body>
 
         <div class="max-w-3xl mx-auto mt-10 sm:px-6 lg:px-8 bg-gray-100">
-            <livewire:book-live />
+            @php
+                $selected = "c++";
+            @endphp
+            <livewire:book-live :language="$selected"/>
+
+
+            <livewire:book-live :language="'c++'"/>
         </div>
 
         @livewireScripts

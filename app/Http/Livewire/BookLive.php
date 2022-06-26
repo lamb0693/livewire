@@ -12,6 +12,8 @@ class BookLive extends Component
 
     public $hello;
 
+    public $language;
+
     public function mount(){
         $this->hello = "mount 함수를 이용해 멤버 변수를 초기화";
     }
